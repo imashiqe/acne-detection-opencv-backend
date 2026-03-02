@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Modern JS features
+    "module": "CommonJS", // Use CommonJS modules to avoid TS1295
+    "rootDir": "./", // Root directory for TypeScript files
+    "outDir": "./dist", // Output folder after compilation
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allows import of CommonJS modules using import syntax if needed
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true, // Skip type checking of node_modules
+    "resolveJsonModule": true, // Allow importing JSON files
+    "noImplicitAny": false // Optional: allow 'any' type for quick dev
+  },
+  "include": [
+    "**/*.ts" // Include all TypeScript files
+  ],
+  "exclude": ["node_modules", "dist"]
+}
